@@ -6,8 +6,10 @@ var mysql = require('mysql');
 
 var con = mysql.createConnection({
   user: 'root',
+  host: '127.0.0.1',
   database: 'chat',
-  password: ''
+  password: '',
+  port: '3000'
 });
 
 con.connect(function(err) {
